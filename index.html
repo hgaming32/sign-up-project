@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - MDN Style</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #333;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 400px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 94.5%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 7px;
+            margin-bottom: 15px;
+            font-size: 16px;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-radius: 4px;
+            color: #fff;
+            background-color: #007acc;
+            font-size: 16px;
+            cursor: pointer;
+            margin-bottom: 15px;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #005a9c;
+        }
+
+        .social-signup {
+            margin-top: 20px;
+        }
+
+        .social-button {
+            display: block;
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            cursor: pointer;
+            text-align: center;
+            font-size: 16px;
+            margin-bottom: 10px;
+            transition: background-color 0.3s;
+            color: #fff;
+        }
+
+        .apple-button {
+            background: #000;
+        }
+
+        .google-button {
+            background: #4285F4;
+        }
+
+        .apple-button:hover {
+            background: #333;
+        }
+
+        .google-button:hover {
+            background: #357ae8;
+        }
+
+        img {
+            width: 24px;
+            vertical-align: middle;
+            margin-right: 8px;
+        }
+
+        .social-button img {
+            width: 20px;
+            vertical-align: middle;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Enter your email</h1>
+              
+        </header>
+
+        <form class="signup-form" action="/submit" method="post">
+            <div class="form-group">
+                <label for="username">Enter your Email</label>
+                <input type="text" id="Enter your em" name="username" required>
+            </div>
+            <button type="submit">Sign Up</button>
+        </form>
+               <p>-----------------------OR-----------------------------</p>
+        <div class="social-signup">
+            <button class="social-button apple-button">
+                <img src="apple.png" alt="Apple Logo">
+                Continue with Apple
+            </button>
+            <button class="social-button google-button">
+                <img src="download__3_-removebg-preview.png" alt="Google Logo">
+                Continue with Google
+            </button>
+        </div>
+    </div>
+</body>
+</html>
